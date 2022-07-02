@@ -1,0 +1,37 @@
+ local args = {
+    [1] = {
+        [1] = "Skill_Invisible",
+        [2] = "Start"
+    }
+}
+
+game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+
+local Player = game.Players.LocalPlayer
+if workspace.Town.Halloween.SecretTraining2:FindFirstChild("Part") then
+    workspace.Town.Halloween.SecretTraining2.Part:Destroy()
+end
+Player.Character.HumanoidRootPart.CFrame = CFrame.new(-244.17, 286.83, 983.80)
+wait(0.6)
+Player.Character.UpperTorso.Waist:Destroy()
+wait(0.2)
+Player.Character.HumanoidRootPart.CFrame = CFrame.new(-278.627045, 281.029755, 999.500183)
+wait(0.2)
+Player.Character.LowerTorso:BreakJoints()
+wait(0.90)
+plr = game.Players.LocalPlayer
+	hum = plr.Character.HumanoidRootPart
+	hum.CFrame = CFrame.new(-369,15736,-9)
+	_G.on = 1
+	while _G.on == 1
+	do
+		local args = {
+			[1] = {
+				[1] = "+FS6"
+			}
+		}
+		wait(0)
+		game:GetService("ReplicatedStorage").RemoteEvent:FireServer(unpack(args))
+	end
+end)
+end)
